@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+ <title>Andre's Notes</title>
+</head>
+
+<body>
+
+<h1>FUNDAMENTALS OF THE WEB</h1>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 1: THE BASICS OF THE WEB AND HTML</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Introduction</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      There are at least five important subjetcs to be studied as basic elements on the web:<em> the web itself, the code language HTML, the repository URL, the protocol HTTP and proper web aplications</em>. First of all the web - or world wide web.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>The World Wide Web</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        The <em>World Wide Web</em> is a collection of HTML documents, which stands for <em>Hypertext Markup Language</em>. The documents are all linked to one another throught <em>Hyper Links</em>. All kinds of file can exist on the web, music, video, images - HTML documents can refer to anything.
+      </p>
+      <p>
+        There are four main actors in the web: <em>users, computers + browsers, the internet itself and servers.</em> The user put up an internet adress on his browser and it makes a request via the internet to the servers, using the HTTP protocol. The servers respond with files displaced by the browser. Servers are computers which host files, and the HTTP is the main protocol used on internet communications. Web documents, as said before, are written in a language called HTML, the next topic.
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML - Hyper Text Markup Language</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        HTML or <em>Hyper Text Markup Language</em> is the language used to write documents placed on the web. It is made of four components: <em>text content</em>, or the text that can be seen; <em>Markup</em>, or what the text looks like; <em>References</em> to other documents; and <em>Links</em> to other pages. Text content is plain text, while markup is used to mark texts up. 
+      </p>
+    </div>
+  </div>
+  
+
+  <div class="concept">
+   <div class="concept-title">
+    <b>HTML Markup</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        Texts are marked up using tags. Usually an <em>element</em> is made of an opening tab, a closing tab and contents, for example:
+      </p>
+      
+      <p>
+        Ex: &lt;name&gt;contents&lt;/name&gt; ----- This is called an <em> element</em>
+      </p> 
+    
+      <p>
+        In an element the contents inside the opening and closing tags are marked up with the effects of that tag. There are several kinds of tags, which one with its own markup effect on text, like the &lt;b&gt; bold tag, &lt;em&gt; emphasis - <em> italics</em> tag, Anchor tags &lt;a&gt;, used to make links, image tags &lt;img&gt;, among others. There are also tags with attributes &lt;tag attr = "value"&gt;, which have values. It is important to say that image tags are void tags, that don´t need a closing tab.
+      </p>
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Whitespace</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        All that is put in HTML turn in a single space. If a user writes a text in multiple lines, it appears in a single line, in whitespace. It is necessary to force multiple lines using tags. The <em>break tag &lt;br&gt;</em> is the first way. It is a void tag to be used after any line the users wants a break. The other way is with <em>paragrarh tag &lt;p&gt;</em>, which is not a void tag. The main difference between those two tags is that <em>&lt;br&gt;</em> is an <em>inline tag</em>, while <em>&lt;p&gt;</em> is a <em> block</em> one. 
+      </p>  
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Inline and Block elements</b>
+    </div>  
+    <div class="concept-description">
+      <p>
+        Block and inline tags have different behaviour. Inline elements fit within a line, sometimes ending it, like &lt;br&gt; tag. Block tags make and an invisible box around the text, that can have height and width. Examples of inline elements are: &lt;a&gt;, &lt;span&gt;, &lt;br&gt;, &lt;img&gt;, &lt;strong&gt;. Some examples of block elements:  &lt;div&gt;,&lt;p&gt;, &lt;form&gt;.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Container elements</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Containers are elements that contain stuff inside them. There are two container tags: <em>&lt;span&gt;</em> and <em>&lt;div&gt;</em>. Span is an inline element, while div is a block one. They both can use CSS, which is a language to give styles to documents. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Computers and stupidity</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        It is good to remember that computers are stupid, and that is not a bad thing to say. They are stupid because they only interpret instructions literaly.
+      </p>
+    </div>
+  </div>  
+</div>
+    
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 2: CREATING A STRUCTURED DOCUMENT WITH HTML</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML, CSS and Javascript</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        <em>HTML files</em> are the structure of a webpage, <em>CSS files</em> are the style of a page, and <em>Javascript files</em> are the interactive components of a page. These languages define the rules for how webpages behave.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML, Structure and CSS: tree-like structure</b>
+    </div>
+    <div class="concept-description">
+      <p> 
+        Webpages have branched structures like trees (<em>tree-like structure</em>). Branches are formed in coding, from big elements to small ones. The same structure may result in different looking webpages, depending on the style imprinted by CSS. It is important to remember that <em>HTML</em> and <em>CSS</em> are both <em>languages</em>. HTML controls the structure of a webpage, while CSS controls the style of a page.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML, CSS and the DOM</b>
+    </div>
+    <div class="concept-description">  
+      <p>
+        The DOM is the tree-like structure of a page. HTML is the language of the web. It has a specific syntax and rules. The basic word in the language of HTML is tag. The browser turns <em>tags</em> into elements, forming <em>trees</em>. It knows how to do it because of the <em>DOM</em> 
+      </p>
+      <p>
+        The <em>DOM</em> or <em>Document object module</em> is a form to represent and interact with elements in HTML. The <em>tree-like structure</em> observed in <em>developers tools</em> section of the browser shows a DOM tree that the browser builds from a HTML document. 
+      </p>
+      <p> 
+        Each HTML tag creates an element in the DOM that browsers use to display the page. The content of a tag can be text, empty or even another tag. Every tag has a type or name that defines the element that will be created. Also tags can have attributes with values. With tags HTML documents define the structure and content of a page.
+      </p>
+      <p>
+        To define the style of a page it is necessary to use another language: <em>CSS</em>. CSS allows the use of specific syntax and rules to change how elements look on the page (fonts size, color, background, orders, positions, etc.)
+        <br>Ex: It is possible with CSS to state that all &lt;h1&gt; elements that belong to the class "article" must be dark blue.
+      </p>
+      <p>
+        To tie structure and style together the HTML document can provide the browser with information on what style to use and where to get it.
+      </p>
+    </div>
+  </div>
+  
+  <div class="concept">  
+    <div class="concept-title">
+      <b>Specific Rules of how elements work</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Once the language is known, it is possible to look to the HTML code and get a good understanding of how the page organize and looks like, or, on the other way, how to break down a webpage into code.
+      </p>
+      <p>
+        Everything in a HTML document is <em>retangular</em> - a <em>box</em>. There are other shapes in the world, like circles and triangles, that can be used in code with the help pf CSS styles. It is importante to focus that in a webpage everything is a box! Different shapes are made with style
+      </p>
+      <p>
+        To use HTML one has to think in terms of boxes, asking: how do i draw a box in every element? How do i do it to reach simple elements, like an image or a text? 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Boxify a design</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The design of the page must be put into boxes, to facilitate the HTML and CSS written work. Any method works to boxify: doodle in paper, print the page, or with ones imagination - the most efficient way must be chosen. A new design must be approached from big boxes to small boxes. Bigger boxes can be filled later with smaller ones.
+      </p>
+      <p> 
+        The <em>&lt;div&gt;</em> tag can be used to define boxes in code. <br>
+        ex: &lt;div&gt;my apps&lt;/div&gt;
+      </p>
+    </div>
+  </div>
+  
+  <div class="concept">  
+    <div class="concept-title">
+      <b>Styles on boxes</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        To put style on boxes it is necessary to use CSS. For each element a <em>class attribute</em> must be given. A <em>class attribute</em> is like a label on a box, something made to remember its content. Boxes can have several labels, as tags, that can belong to multiple classes. It is good to have class names that make sense, that can be understood just by looking at the code.<br>
+        ex: &lt;div class="tittle'"&gt;my apps&lt;/div&gt;
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Text editors (for programming)</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Programming language can be written in any editor, but there are some specific tools for doing it, like sublime editor. When writing code, it is highly recommended the use of a programming text editor. It makes the life of a programmer easier. 
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 3: APPLYING STYLES TO HTML WITH CSS</b>
+  </div>
+  <div class="concept">
+    <div class="concept-title"> 
+      <b>CSS</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        CSS stands for <em>Cascading Style Sheets</em>. It is a markup language that tells html files what they should look like. It controls the style of a html document. Cascading means that the most specific rule is applied to every element. 
+      </p>
+      <p>
+        CSS uses <em>selectors</em> to define particulars styles to be applied in each element.
+      </p>
+      <p>
+        An important CSS concept is <em>inheritance</em>, which requires <em>abstract thinking</em>. This concept relies on ancestor-descendent relationship to operate, that can be seen on document trees of an html documents. By this mechanism properties are applied to a specific element and its descendents, just like in biology.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">  
+    <div class="concept-title">
+      <b>Avoidance of repetition</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        In programming it is very important to avoid repetition. A repetition in code may lead to more work, since a little change in something means that all repeated code must be changed also. This may cause trouble and confusion. CSS helps programmers to avoid repetition. Using &lt;div&gt; or other elements it is possible to control all changes in the document appearence with the CSS code, making the job easier and faster. 
+      </p> 
+    </div>
+  </div>
+</div>
+
+
+<h1>TELLING COMPUTERS WHAT TO DO</h1>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 1: INTRODUCTION TO PROGRAMMING</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Computer Science</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>Computer science </em> is about <em>solving problems</em>. It works by breaking a problem into smaller pieces and then precisely and mechanically describing a sequence of steps that can be used to solve each piece. The task is to do that computer follow the steps and solve the problem by itself. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Computer</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        Machines are usually designed to do just one thing, like a toaster. <em>The universal machine</em>, in other hand, was imagined to do whatever the programmer told it to do, an universal problem solver. <em>Computers</em> are 
+        <em>universal machines</em>. <em>Programs</em> are used to tell a computer what to do. The power in this machine is that it can be programmed to do any sort of computation, the programmer just has to figure out how to program the order.  
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>Programs</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        <em>Programs</em> tell computers what to do. The program must be a very <em> precise sequence of steps</em>. It is necessary to give instructions in a certain order. The power of the computer is that it can execute billions of instructions in a few seconds, following the sequence of steps very quickly. The program tells the computer which steps to take, and it follows. In order to design a program it is necessary a language to "speak" with the computer.
+      </p>
+    </div>
+  </div>
+  
+
+  <div class="concept">
+   <div class="concept-title">
+    <b>Programming languages - Python</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        Programs need to be designed in a language that can be understood by computers. As said before, computers are stupid, they only understand literal orders. Natural languages have syntatic and semantic problems that create certain difficulties with literal interpretations. One of them is ambiguity - the same sentence can be interpreted in many ways in natural languages. Another one is verbosity - natural languages require many words to describe a complicated situation. That is why a programming language is necessary. the programmer must be sure that the computer interprets the program the exact same way he wanted and programming languages can describe complicated situations in just a few lines of code.       
+      </p>
+      
+      <p>
+        Admiral Grace Hopper (1906-1992), for example, was a pioneer in computer sciences and writing computer languages. She wrote one of the first computer languages, called COBOL, for a long time the most used one. She was also the one of the first to create a compiler, a program that makes programs (at that time many thought computers could only do arithmetic).
+      </p>
+      
+      <p>
+        There are many different languages for programming computers. Python is one that is going to be learned in this course. It is a high-level language to write programs. A high-level language means that instead of the program running directly on the computer, the programs written in python are the input to the python interpreter (which itself is a program), which runs on the computer. 
+      </p> 
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Interpreter</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        An <em>interpreter</em> is a program that runs others programs written in a certain programming language, interprets and executes them, by running a program in the language that the computer can understand directly - machine language. The python interpreter does that with programs written in python language. The python interpreter can only interpret sentences in python language that it already previously knows. Python has a grammar, like natural languages, in order be possible to communicate - a whole syntactic set of rules to write sentences. 
+      </p>  
+
+      <p>
+      The difference between an interpreter and a compiler, like Admiral Grace Hopper built, is that a compiler does all the work at once, and them runs the new program, whereas on an interpreter the work is done at the same time.  
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Grammar</b>
+    </div>  
+    <div class="concept-description">
+      <p>
+        To create a language is necessary a basic set of rules, <em>a grammar</em> - the computer language grammar must be able to surpass the natural language syntax and semantic problems. John Backus, the lead designer of the fortran computer language for IBM in the fifties, helped to create the <em>Backus-Naur notation form</em>, in order to be able to precisely describe the language, in a way that is very simple and concise. It works with concepts of non-terminal, terminal and derivation to make valid expressions.        
+      </p>
+
+      <p>
+       <em>The Backus-Naur notation form</em> start always with a non-terminal, that throught derivation, following the rules, reaches a terminal, constructing a valid expression. Python uses the Backus-Naur notation form to its grammar.
+      </p>  
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Python grammar and expressions</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Python grammar is much stricter than normal language rules. The code must match the language exactly to get a correct syntax. If it does not, then an error message appears. 
+      </p>
+
+       <p>
+       <em>An expression is something that has a value</em>, a valid sentence constructed with correct grammar rules. A Python expression is a valid Python statement. For example: <span class = "code">print 3 + 5</span> is a valid expression, but <span class = "code">print 3 + 5 +</span> is not.
+      </p> 
+    </div>
+  </div>  
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 2: VARIABLES AND STRINGS</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Variables in Python</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>A variable</em> is a programmer tool to give <em>names</em> to <em>values</em>. If <span class = "code">monkey</span> is a variable with a value 9, then the code <span class = "code">print monkey</span> would print out the value 9.   
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Assigning values to variables</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        <em>Values</em> can be assigned to <em>variables</em> using the signal <span class = "code">=</span>. Here is an example: <span class = "code">andre_age = 29</span>. This code assignes the value 29 to the variable <span class = "code">andre_age</span>.
+      </p>
+      <p>
+        It is possible to change the value of a variable, simply by re-assigning other value using the same process. 
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>Meanings of the <span class = "code">=</span> sign in Python</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The sign <span class = "code">=</span> can have at least two different meanings in Python. The difference can be seen in two lines of code: 
+      </p>
+      <ul>
+          <li>In the line <span class = "code">4 = 4</span>, the <span class = "code">=</span> sign means equality or "is the same as".</li>
+          <li>In the line <span class = "code">andre_age = 29</span>,the <span class = "code">=</span> sign means assignment or "takes the value of".</li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <div class="concept">
+   <div class="concept-title">
+    <b>Utility of variables</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        Variables can be useful in several ways in programing:       
+      </p>
+      <ul>
+          <li>They helps humans to have better undestanding of codes, improving their readability.</li>
+          <li>They are useful to store the value of important data.</li>
+          <li>They can be used to change somethings value (like in the line <span class="code">andre_age = andre_age+1</span></li>
+        </ul>
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Strings, numbers and the sign <span class = "code">+</span></b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Strings are different than numbers in Python. <span class = "code">5</span> is a number, while <span class = "code">"5"</span> is a string.The meaning of <span class = "code">+</span> is different when used with numbers or strings.   
+      </p>  
+      <ul>
+          <li>The code <span class = "code">5 + 4</span> uses only numbers, it would return <span class = "code">9</span>. In this line the sign <span class = "code">+</span> <em>sums up</em> the numbers</li>
+          <li> The code <span class = "code">"5"+"4"</span> uses only strings, it would return <span class = "code">54</span>. In this line the <span class = "code">+</span> sign <em>concatenate</em> strings.  
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 3: INPUT -> FUNCTION -> OUTPUT</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Functions</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>A function</em> is something that takes an <em>input</em> and produces an <em>output</em>. A function <span class = "code">square_meters</span>, for example, can take some data as inputs and return an output calculated in square meters.   
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Making and using functions</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        A programmer can create and use <em>functions</em> using computer language. A great part in programming is creating and defining functions - the inputs and desired outputs of a functions. Functions can be defined to receive an input and return an output. After being defined, a function can be used to return that defined output. For example: 
+      </p>
+      <ul>
+          <li>Defining functions: <br> <span class = "code">
+
+          def square(a):<br>
+          a = a * a<br>
+          return a<br></span></li>
+
+          <li> Using functions: <br> <span class = "code">print square(3)</span>. Using this function with the input 3 will return its square number 9</li>  
+      </ul>
+    </div>
+  </div>
+   
+  <div class="concept">
+   <div class="concept-title">
+    <b>Functions and <span class="code">return</span> statement</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        The <span class="code">return</span> statement in a function tells the interpreter exactly what output the function should produce. A function without the <span class="code">return</span> statement will behave generating a <span class="code">None</span> output:       
+       <br> <span class = "code">
+
+          def square(a):<br>
+          a = a * a<br>
+          print square<br>
+          None</span>
+      </p>       
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Using functions and avoidance of repetition</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        A programmer can create functions and use it as much as he wants - once it is defined, it does not have to be again defined. This tool can help a programmer avoid repetition more easily. 
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 4: DECISIONS AND REPETITION: IF AND WHILE</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Decision making and repetition</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>Decision making and repetition</em> are two important programmer tools, envolving procedural thinking. The <span class = "code">if</span> statement can be used for decision making, controlling which code gets executed when; and the <span class = "code"> while</span> statement can be used for repetition, creating loops so the code performs the same task many times.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Decisions, comparisons and the <span class = "code">if</span> statement.</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        <em>Comparisons</em> can be used to make <em>decision</em>: comparisons are a way to test and decide what to do. Python provides many different operators for comparisons (ex: &lt><<=&gt). A comparison returns a Boolean value, <em>True or False</em>. Equality comparisons are done with double equals <span class = "code">==</span>, beacause a single equal <span class = "code">=</span> means assignment, as seen before. The non-equality comparison with  <span class = "code">!=</span>.  
+      </p>
+       <p>
+        Based on a<em>comparison</em>, the <span class = "code">if</span> statement can be used to make the code do something different depending on the input. The <span class = "code">if</span> statement is build using a <em>test expression</em> and a block of code: if the test expression is <em>True</em>, then the block of code runs; if the expression is not true, the interpreter follows to the next line of not indented code. That way it is possible, giving the input, to make the machine make decisions based on code.  
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+   <div class="concept-title">
+      <b>Repetition, <span class="code">while</span> and <span class="code">break</span> statements</b>
+    </div>
+   <div class="concept-description">
+      <p>
+        For repetition it is possible to use the <span class="code">while</span> statement. As long as the <em>test expression</em> is <em>True</em> the code will continue running; once it is false, the code passes to the next step. 
+      </p> 
+      <p>
+        The <span class="code">break</span> statement lets stop the loop, even thought the expression is true.
+      </p>     
+    </div>
+  </div> 
+   
+  <div class="concept">  
+   <div class="concept-title">
+      <b><span class="code">or</span> statement</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The <span class="code">or</span> statement can be used to evaluate two expressions.  <span class="code">or</span> only evaluates what it needs to. If one expression is true, and the other one is an error, the function will return true.  if the first expression evaluates to true, the value is true and the second expression is not evaluated. If the value of the first expression is false, than the value of the or construct is the value of the second expression. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Debbuging</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Debugging is a crucial process in programing. Every code has bugs, so it is necessary a method for eliminating them more efficiently. Sometimes the code crashes, showing an error. Sometimes the error line gives some information about the bug in code.  
+      </p>
+      <p>
+        Often to make code a programmer look to a model code, to have a model to what to write, but change then to do what they want. If the code does not work, first try to do random changes on the code, and then when that does not work, ask for help. When a code does not work, copy and paste the model, put a tag in front of your code, to make a not readable line. Work the model, and then modify it in slow paces (baby steps), to do want you want it to do. Once you are done, try to see where the bug was on the first code. Care must be exercised to work with model codes, or bugs can be inherited from it.  
+      </p>
+      <p>
+        Some bugs do not crash the program. Give incorrect outputs. In this case the function must be splited up into smaller pieces, to look into how those pieces are working. Sometimes putting print statements inbetween the functions give good results.  
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 5: STRUCTURED DATA: LISTS AND FOR LOOPS</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>lists and strings</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>Lists</em> and <em>strings</em> are sets of <em>structured data</em>. They both can be used to operate objects inside of them, but they are essencially different. Strings can only store sequence of characters, while lists can store sequences of anything (characters, numbers, strings or other lists). To create a list, instead of using quotes, like to create a string, it is used square brackets. 
+    </p>
+
+    <p> The general grammar for constructing a list is: <br>
+     <span class = 'code'> <...> = [<...>, <...>,...]</span> 
+
+    <p> Lists can be stored in variables, as strings.<br>
+     <span class = 'code'> p = [1,2,3,4,5] </span>
+    </p>
+
+    <p>
+      Like in strings, square brackets can be used to select elements of the list.<br>
+      <span class = 'code'> p[0] -> 1</span>
+    </p>
+
+    <p>
+      The signal <span class = 'code'>:</span> can be used to select multiple elements in a list. This command will return a list containing those elements, and not a substring (like in strings): <br>
+      <span class = 'code'> p[0:2] -> [1,2,3]</span>
+    </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Nested lists</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        Different types of elements can be mixed in a list, including lists. This can be used for many purposes, like storing different kinds of information in the same place.   
+      </p>
+       <p>
+        Ex: <br>
+        <span class = 'code'>Beatles = [['john', 1940], ['Paul', 1942],['George', 1945], ['Ringo', 1940]]</span>  
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+   <div class="concept-title">
+      <b>Mutation</b>
+    </div>
+   <div class="concept-description">
+      <p>
+        Lists supports mutation, different from strings. By this process a value of a list can be changed after created.  When a variable is assigned to a new string, it don´t change the old one, just assign the variable to a new one. The plus operator also creates a new string, and does not change the old one. In lists the elements itself can be changed. This is called <em>mutation</em>. 
+      </p> 
+      
+      <p>
+        Ex: <br>
+        <span class="code">p = ['H','e','l','l','o']<br>
+        p[0] = 'Y'</span>. <br>
+        This code changes the value 'H' in the list to 'Y'. 
+      </p> 
+
+      <p>
+        Mutation is specially important when another variable is introduced. For example: <br>
+        Considering the last list created, the code <span class'code'>q = p</span> makes the two variables refer to the same list. The code <span class'code'>q[4] = '!'</span> changes a value referred in a list referred by q. If the value of the element in the list in q is changed, the value is also changed in p. The fact that p and q refer to the same object, changes the value of p.
+      </p>
+
+      <p> 
+        Lists are mutable objects, while strings are immutable ones.
+      </p>
+    </div>
+  </div> 
+   
+  <div class="concept">  
+   <div class="concept-title">
+      <b>Aliasing</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        When there is at least two ways to refer to the same object, that is called <em>aliasing</em>. Just like an alias (the secret agent is james bond and 007. Both are ways to refer to the same person. Whatever state that person has, also the two names have). If there is two variable names referring to a same object, any change made to the object one refers to, also affects the value that the other refers to.  
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>List operations</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        As seen, lists can be used to store complex data. There are operations that can be made with lists. One of them is <span class = 'code'>append</span>. It is a method to add a new element to the end of the list, mutating the list that is invoked on. It is not creating a new list, but mutating an old list. For example: <br>
+         <div class = 'code'>brothers.append('Caio')</div> This code will add 'Caio' at the end of the original list of my brothers, mutating it.  
+      </p>
+      <p>
+       The <em>plus</em> <span class = 'code'>(+)</span> operator works very similar from the concatenation operation for strings. Plus produces a new list from the concatenation of elements on the old lists, but don´t change the old ones.<br>
+       <span class = 'code'>[0,1] + [2,3] = [0,1,2,3]</span>. This code creates a new list from the concatenation of the old ones.    
+      </p>
+      <p>
+        The <span class = 'code'>len</span> operator, short for length, can be used to show the length of the object. It also works for strings, anything that is a collection of thing. <br>  
+        <span class = 'code'>Len([1,2] = 2</span>. This code shows the length of the list. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>For loops</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        A <em>for loop</em> permits looping through the elements of a list. Loops on lists function a lot alike other loops, which uses the while operator, but with much less code. The general grammar for <em>for loops</em> is:<br>
+        <span class = 'code'> 
+        for <...> in <...>:<br>
+        </span>
+      </p>   
+      
+      <p>
+        This operation can be used to print all elements in a list, for example:<br>
+        <span class = 'code'>
+        Def print_all_elements(p):<br>
+            for e in p:<br>
+            Print e</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Index method</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The <em>index</em> method is a way to find elements on a list.  permits looping through the elements of a list. The index method is invoked on a list, and the output is the position of the element in that list. It always gives the position the element appears the first time. If the list does not contain the searched object, then the output is an error (element is not in list).
+     </p>
+
+     <p>
+       ex:<br>
+       <span class = 'code'>
+        p = [0,1,2] <br>
+        print p.index(2) <br>
+        output: 2 <br>
+        p = [0,1,2,2,2,2,2] <br>
+        print p.index(2) <br>
+        output: 2 </span>
+      </p>   
+    </div>  
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>In operator</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The <em>in</em> operator means to have a value in a list. If the value is in the list, the output is true. Otherwise, output is false.
+     </p>
+
+     <p>
+       ex:<br>
+       <span class = 'code'>
+        3 in p <br>
+        p= [0,1,2] <br>
+        False <br>
+        </span>
+      </p>  
+
+      <p>
+        The <em>not in</em> operator is opposed to in. If the value is in the list, the output is false. Otherwise, output is True. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Solving problems</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Solving problems is a skill that can be applied in many areas. To properly solve a problem, first ir it necessary to undestand it. All computational problems have inputs and desired outputs. A problem is defined by the set possible inputs (for most complex problems, generally an infinite set) and the relationship between inputs and outputs. The solution to the problem is a procedure that can take any input in that set, and produces the desired output that satisfies the wanted relationship. There are some steps to take.
+     </p>
+
+     <ul>
+        <li>0. Do not panic!</li>
+        <li>1. What are the inputs?: this leads to he question of how are inputs represented.</li>
+        <li>2. What are the outputs?</li>
+        <li>3. Work through some examples by hand</li>
+        <li>4. Simple mechanical solution</li>
+        <li>5. Develop incrementally and test as we go</li>
+      </ul>
+    </div>  
+  </div>  
+</div>
+
+<h1>ADD VIDEOS TO YOUR PAGE</h1>
+
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 1: USING FUNCTIONS</b>
+  </div>
+
+   <div class="concept">
+    <div class="concept-title">
+      <b>Introduction</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      In this stage we are going to learn how to find and use other people's code. This simples task can save a lot of time and effort. Programming is a lot easier when programmers share code amogst each other. Doing that, we are going to learn some new concepts, like <em>object oriented programming OOP </em> and the use of <em>classes</em>.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Lesson objective</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      In this lesson we are going to create two projects using functions to show that sometimes they don't present so elegant solutions. This result will lead to the study of using classes in lesson 2 and making classes in lesson 3. The first project will be called <em>take a break</em> and the second one <em>rename files</em>.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Take a break Project</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+       <em>Take a break</em> is a project to make a program to remember the user to take a break from work on computer. It keeps track of time and after 2 hours of work opens up the browser to play the users favorite song. After another two hours of work, it does the same, and so on. The program has to wait for two hours then open up a web browser.   
+      </p>
+      
+      <p>
+      First we have to search how to open an internet browser in python. There's a function called <em>webbrowser.open(''any website'')</em> that opens any web site the programmer wants.  We save the program and run it in the python interpreter. To call the function it is necessary to import it in code (import webbrowser). One of the steps is made. Then it is necessary to make the program wait for 2 hours. We search on the internet how to do that. In stack overflow it is suggested to use something called <em>time.sleep(0.2)</em> for a given number of seconds. We import time and use time.sleep to set the clock.  Another step ready. We have to put this process in a loop, so the user can take multiple breaks per day. The last step is to use the product for 2 hours -> 2 * 60 * 60.
+      </p>
+      
+      <p>
+      The functions <em>time.sleep</em> and <em>webbrowser.open</em> come from the <em>Python standart library</em>. It is a library of already made functions that comes with python. For example, in the python folder there is a file named <em>webbrowser</em>, and inside that file there is a function called <em>def open</em>. This is the function that allowed to open the youtube video. There is also another module called <em>time</em>, and time has several functions inside of it, like <em>ctime</em>, that lets us see the current time and <em>sleep</em>, that makes the computer wait.  We don't know exactly how those functions operate. Some details of operation are hidden from us. This hiding of details in programming is called <em>abstraction</em>. The ideia of abstraction allows us to focus on the program we actually want to write, using these functions simply by reading their documentation. The documentation for python standard library is available on the internet. So if we want to know any functions, we just have to search the documentation.
+      </p>
+
+      <p>
+      Example code:
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">time</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">webbrowser</span>
+
+total_breaks <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">3</span>
+break_count <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+
+<span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;This program started on&quot;</span><span style="color: #333333">+</span>time<span style="color: #333333">.</span>ctime())
+<span style="color: #008800; font-weight: bold">while</span>(break_count <span style="color: #333333">&lt;</span> total_breaks):
+    time<span style="color: #333333">.</span>sleep(<span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #333333">*</span> <span style="color: #0000DD; font-weight: bold">60</span> <span style="color: #333333">*</span> <span style="color: #0000DD; font-weight: bold">60</span>)
+    webbrowser<span style="color: #333333">.</span>open(<span style="background-color: #fff0f0">&quot;https://www.youtube.com/watch?v=4XKGfziuw5c&quot;</span>)
+    break_count <span style="color: #333333">=</span> break_count <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span>
+</pre></div>
+
+
+
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>Rename files Project</b>
+    </div>
+    <div class="concept-description">
+      <p>
+      Sometimes we want to rename all of the file names from a folder. In this project we have to write a program that looks at the right folder and gets for us all of the file names from that folder, renaming them. Our task is to define a function rename files that: get file names from a folder and for each file rename filename.  
+      </p>
+      
+      <p>
+       First we search how to get file names from a folder in python. There is a module in python called <em>OS</em>, short for <em>operation system</em>, which has a function called <em>listdir</em>, that lists everything in a given directory. The function <em>os.listdir()</em> will get everything from a given directory.  The first step is ready. The next one is to rename the files. Inside OS there is another function called <em>os.rename()</em>, that can rename files in a given directory. It takes the source name of the file and changes it to the destination name. In order to rename multiple files, it is necessary to put the function in a loop (for loop). For every file the function will rename it using os.rename. There is a function called <em>file_name.translate</em> that can take some characters from filenames. Then it is necessary to put the translate function in the code. There also a function called <em>os.cwd()</em> that shows the current working directory, and other, called <em>os.chdir</em>, that change the directory searched.  
+      </p>
+      <p>
+       Exception: if we try to rename a file that does not exist or try to rename a file to a name that already exists in the folder, it will show an error. This error is called an exception.   
+      </p>
+
+      <p>
+      Code example:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">os</span>
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">rename_files</span>():
+    <span style="color: #888888">#get files from a folder</span>
+    file_list <span style="color: #333333">=</span> os<span style="color: #333333">.</span>listdir(<span style="background-color: #fff0f0">r&quot;C:</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\&quot;</span><span style="background-color: #fff0f0">)</span>
+    <span style="color: #008800; font-weight: bold">print</span>(file_list)
+    saved_path <span style="color: #333333">=</span> os<span style="color: #333333">.</span>getcwd()
+    <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Current Working Directory is &quot;</span><span style="color: #333333">+</span>saved_path)
+    os<span style="color: #333333">.</span>chdir(<span style="background-color: #fff0f0">r&quot;C:</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\&quot;</span><span style="background-color: #fff0f0">)       </span>
+    <span style="color: #888888">#for each file, rename the filename</span>
+    <span style="color: #008800; font-weight: bold">for</span> file_name <span style="color: #000000; font-weight: bold">in</span> file_list:
+        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Old Name - &quot;</span><span style="color: #333333">+</span>file_name)
+        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;New_Name - &quot;</span><span style="color: #333333">+</span>file_name<span style="color: #333333">.</span>translate(<span style="color: #007020">None</span>, <span style="background-color: #fff0f0">&quot;0123456789&quot;</span>))
+        od<span style="color: #333333">.</span>rename(file_name, file_name<span style="color: #333333">.</span>translate(<span style="color: #007020">None</span>, <span style="background-color: #fff0f0">&quot;0123456789&quot;</span>))
+    os<span style="color: #333333">.</span>chdir(saved_path)                           
+                        
+rename_files()
+</pre></div>
+
+      </p>
+    </div>
+  </div>
+  
+
+  <div class="concept">
+   <div class="concept-title">
+    <b>Movie Website Project using functions</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        Until now we have been writing functions by creating an empty python file and adding functions to it. We are writing code one line at a time, and that technique have been working this far. So we will try and use it to build a movie website.       
+      </p>
+      
+      <p>
+        First we have to create a python file. A movie has a lot of data associated with it, like the tittle or storyline, and that has to be included. In second place, we have to be able to do something with the movies library, like show movies information or trailer. For this to work, it is necessary to create a file for every movie, and this don't sound very practical.
+      </p>
+      
+      <p>
+        To facilitate the task we have to define a template for our movies, and record all of the data that needs to be recorded there. We need to build a template and be able to say that each movie is a type of that template. Something new is necessary - that something is called classes. 
+      </p> 
+    </div>
+  </div> 
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 2: USING CLASSES</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Draw turtle</b>
+    </div>
+    <div class="concept-description">
+
+     <p>
+      We will learn about classes with functions that draw shapes. It is demonstrated a function that through drawing multiple squares can create a circle. The first step to drawing multiple squares is to draw a single square. To do that something called <em>turtle</em> can be used in python. Inside the python standard library there is a file called turtle, with lowercase t, and inside that file is a class, a <em>class Turtle</em>, with uppercase T. A class is like a package box that put things really well together and allows us to write code like <em>turtle.Turtle()</em>, as if we are calling a function. In fact, we are calling a function, named <em>init</em> (stands for initialize), which is defined inside the class Turtle. It creates space in memory for a new instance or a new object of the class Turtle. We can create an instance called Shinji using turtle. Shinji can now access all the rest of the methods there are inside class Turtle, like forward and right.   
+      </p>
+
+      <p>
+      A class is like a blueprint of a building. A blueprint contains certain pieces of information about the building, for example, indicating the fact that it has a size and a color. It is also known that the same blueprint can be used to build multiple different buildings - a yellow office building or a blue residential one. A class Turtle, like a blueprint, indicates the fact that turtle has movements, and from this class, or blueprint, multiple instances can be created, like shinji, an instance of the class Turtle. These Individual instances of the class Turtle will contain information about their sizes, their colors or movements, for example.         
+      </p>
+
+      <p>
+      There is an important difference between functions and classes. When we used functions previously, we wrote code like webbrowser.open(), but when we wanted to create instances of the class Turtle, we wrote code that said turtle.Turtle(). In the first case, all we are doing is calling a function, but in the second case, the init function defined inside of class turtle is the function that gets called, and it creates or initializes space inside memory for a new instance, in this case called shinji. Even though it feels like we are calling functions in both cases, not all functions are created equal. In the first case all we did was call a function, in the second case, the class called the function init, to create space for its instance, that not existed before.         
+      </p>
+
+      <p>
+      Example code: This example shows an instance named shinji, which draws a circle using squares and another instance called elyse, that draws a circle.
+
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">turtle</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">draw_square</span>(some_turtle):
+    <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">5</span>):
+        some_turtle<span style="color: #333333">.</span>forward(<span style="color: #0000DD; font-weight: bold">100</span>)
+        some_turtle<span style="color: #333333">.</span>right(<span style="color: #0000DD; font-weight: bold">90</span>)
+
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">draw_art</span>():
+    window <span style="color: #333333">=</span> turtle<span style="color: #333333">.</span>Screen()
+    window<span style="color: #333333">.</span>bgcolor(<span style="background-color: #fff0f0">&quot;red&quot;</span>)
+    <span style="color: #888888">#create turtle shinji - draws saqure</span>
+    shinji <span style="color: #333333">=</span> turtle<span style="color: #333333">.</span>Turtle()
+    shinji<span style="color: #333333">.</span>shape(<span style="background-color: #fff0f0">&quot;circle&quot;</span>)
+    shinji<span style="color: #333333">.</span>color(<span style="background-color: #fff0f0">&quot;blue&quot;</span>)
+    shinji<span style="color: #333333">.</span>speed(<span style="color: #0000DD; font-weight: bold">8</span>)
+    <span style="color: #008800; font-weight: bold">for</span> i <span style="color: #000000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">37</span>):
+        draw_square(shinji)
+        shinji<span style="color: #333333">.</span>right(<span style="color: #0000DD; font-weight: bold">10</span>)
+    <span style="color: #888888">#create the turtle elyse - draws a circle</span>
+    elyse <span style="color: #333333">=</span> turtle<span style="color: #333333">.</span>Turtle()
+    elyse<span style="color: #333333">.</span>shape(<span style="background-color: #fff0f0">&quot;arrow&quot;</span>)
+    elyse<span style="color: #333333">.</span>color(<span style="background-color: #fff0f0">&quot;yellow&quot;</span>)
+    elyse<span style="color: #333333">.</span>circle(<span style="color: #0000DD; font-weight: bold">100</span>)
+    
+    window<span style="color: #333333">.</span>exitonclick()
+
+draw_art()
+</pre></div>
+
+
+
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Send text messages Project</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        We are going to write a program that send text messages. The goal is to send a text message using code. There is a python package that does exactly that, it is called <em>twilio</em>.  It does not come with the python standard library. Twilio is one of the many external python packages that are avaiable. We have to install twilio, following the documentation. Then, go to the twilio home page to see if they have a code to send sms. They have exactly that. We simply have to follow the instructions to build the code. The <em>class TRC</em> has information on how to connect to twilio and send text messages. With it we can create an instance named client. Client can do then things that are defined in the class TRC, like send out texts. When we run the code it calls the class, which calls the function init, creating an instance called client,  that  can do a lot of stuff, like send sms. 
+      </p>
+
+      <p>
+      Code example:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">twilio</span> <span style="color: #008800; font-weight: bold">import</span> rest
+ 
+<span style="color: #888888"># Your Account Sid and Auth Token from twilio.com/user/account</span>
+account_sid <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;AC4b64377b0a1db4096cf8d7e4b6f0c0fb&quot;</span>
+auth_token  <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;b1b3ca87d6915cc7b68f5a0258606264&quot;</span>
+client <span style="color: #333333">=</span> rest<span style="color: #333333">.</span>TwilioRestClient(account_sid, auth_token)
+ 
+message <span style="color: #333333">=</span> client<span style="color: #333333">.</span>sms<span style="color: #333333">.</span>messages<span style="color: #333333">.</span>create(
+    body<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;Esse e um teste sensacional!&quot;</span>,
+    to<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;+5511942310540&quot;</span>,    <span style="color: #888888"># Replace with your phone number</span>
+    from_<span style="color: #333333">=</span><span style="background-color: #fff0f0">&quot;+551940421686&quot;</span>) <span style="color: #888888"># Replace with your Twilio number</span>
+<span style="color: #008800; font-weight: bold">print</span> message<span style="color: #333333">.</span>sid
+</pre></div>
+      </p>
+ 
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>Profanity editor Project</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        In this project we will create a program that detects curse words in a text. The program has to read text from a document and check this text for curse words. 
+      </p>
+
+      <p>
+        First we start by creating a function in python that can read texts. There is <em>built-in function</em> in python called <em>open</em> that can open files on the computer. This function takes the name of the location of the file we want to open. The function open is inside the python standard library. To use this function, there is no need to import any class. It is a built-in function, like <em>file</em> and <em>all</em>. It returns an object of the file type. It may seens that open do not creates space for the object or instance, but if we look deep inside the function we will see that it calls something similar to init to make memory space for the object.  There is another function, called <em>read</em>, that can be used to read files. 
+      </p>
+
+      <p>
+        The second part is to check the document for curse words. Google provides a service called <em>what do you love</em> that can detect curse words. We have to do it in code. We create a function called <em>check_profanity</em>, that takes one argument - the text we want to detect. There is a module in python called <em>urllib</em>, that helps us get information from the internet. It has a function called <em>url.open</em>, which takes a link to a website - in this function we place the link to the google service and the text we want to check. These functions allow us to make a connection to the internet, to check our text. urlopen is quite similar to open, the last function we used. The first one open a file in our computer, the second one, a link on the internet. It is important to say that urlib is a module in python, and urlopen is a function inside of it. The module provides a high-level interface for fetching data across the world wide web.  
+      </p>
+
+      <p>
+        By creating a piece of code <em>called quotes = open(file)</em>, we are also creating an object of the class file, that can do things like read files from a computer. The module urllib also creates an instance or object. It is just like when we started creating squares (we wrote a code called shinji = turtle.Turtle()). With this code we created an object or instance of the class turtle. We can command this instance to go forward or do something else. In all three of this examples we created  objects, that can do things we want. 
+      </p>
+
+      <p>
+      Code example:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">urllib</span>
+
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">read_text</span>():
+    quotes <span style="color: #333333">=</span> <span style="color: #007020">open</span>(<span style="background-color: #fff0f0">&quot;D:\Intro to programing\detect_profanity\movie_quotes.txt&quot;</span>)
+    contents_of_file <span style="color: #333333">=</span> quotes<span style="color: #333333">.</span>read()
+    <span style="color: #888888">#print(contents_of_file)</span>
+    quotes<span style="color: #333333">.</span>close()
+    check_profanity(contents_of_file)
+    
+<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">check_profanity</span>(text_to_check):
+    connection <span style="color: #333333">=</span> urllib<span style="color: #333333">.</span>urlopen(<span style="background-color: #fff0f0">&quot;http://www.wdyl.com/profanity?q=&quot;</span><span style="color: #333333">+</span>text_to_check)
+    output <span style="color: #333333">=</span> connection<span style="color: #333333">.</span>read()
+    <span style="color: #888888">#print(output)</span>
+    connection<span style="color: #333333">.</span>close
+    <span style="color: #008800; font-weight: bold">if</span> <span style="background-color: #fff0f0">&quot;true&quot;</span> <span style="color: #000000; font-weight: bold">in</span> output:
+        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Profanity Alert!!&quot;</span>)
+    <span style="color: #008800; font-weight: bold">elif</span> <span style="background-color: #fff0f0">&quot;false&quot;</span> <span style="color: #000000; font-weight: bold">in</span> output:
+        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;This document has no curse words!&quot;</span>)
+    <span style="color: #008800; font-weight: bold">else</span>:
+        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Could not scan the document properly.&quot;</span>)
+    
+
+read_text()
+</pre></div>
+
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 3: Object Oriented Programming - OOB</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Object Oriented Programming: a first look</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>Object Oriented Programming</em> can be seen as a programming model paradigm based on the manipulation of <em>"objects"</em>. An object is like a thing that can perform certain tasks - it is a structure that contain data and procedures, which can be created and used by the programmer. Computer programs can be made by the interaction of objects. Programming languages that use object-oriented programming are often <em>class-based</em>, which means that <em>objects are instances of classes</em>. Classes can be thought as representations of a type of object, a plan or a bluerprint from which the objects are created. A great number of the most used programming languages today (often multi-paradigm) supports this programming paradigm, including python.      
+     </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Utility of Object Oriented Programming</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      Object oriented programming is a valuable tool for programming projects. It permits a more efficient method of software-development, mainly because of three factors: <em>modularity, extensability and reusability</em>.  
+     </p>
+
+     <p>
+      OOB is a <em>modular programming paradigm</em>, because it provides a way to develop a program by constructing separated units - a way to separate the duties of the programmer in software development. Modularity improves <em>software maintainability</em>, since parts of the system can be changed or updated without the need of large scale changes.    
+     </p>
+
+     <p>
+      OOB is also <em>extensible</em>. Objects can be extended to include new attributes, not previously defined in the class they belong to. This can increase the powers of the programmer, to go beyond the previously stablished classes and add new things.     
+     </p>
+
+      <p>
+      OOB permits an efficient way to <em>reuse code</em>. Objects can be reused within and across applications. This enables a <em>faster software development with lower costs</em>, since OOB languages come with a rich library of objects and the code created for a project can be reused for future ones.         
+     </p>
+
+     <p>
+      When used properly these factors together enables the creation of a <em>higher-quality software</em>, since they permit that more time and resources be used in the software verification.         
+     </p>
+
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Classes and objects</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      One of the most important linguistic distinctions in object-oriented programming is between <em>classes and objetcs</em>. A simple question may enlight us in this matter: what is the difference between a dog and a german sheperd? Dogs are like classes, which the objects - german sheperds, belong to. In that way, classes indicate certain elements of objects, and objects belong to certain classes. Many objects can be build from a class. Classes and objects can be constructed in programming, and that is our next project.        
+     </p>
+
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Making classes Project: the use of Object-Oriented Programming</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      the goal of the present project is to make a class. We will learn this by developing a movie database website. The output of this project is to create a place to gather all of our favorite movies, and when we press the poster of each one, its trailer plays. To do this, we will create a <em>class Movie</em> that can create several objects or instances - the movies. Like in that blueprint analogy, the class movie is the blueprint, and the buildings are the movies (objects or instances). 
+     </p>
+     
+     <p>
+      The class movie could contain whatever we want, but we should remember the following data points: <em>title, youtube_trailer, storyline, poster_image, reviews, and a function show_trailer()</em>. If we called toy_story.storyline, it should return ''A story of a boy and his toys that come to life''; and <em>avatar.show_trailer()</em> plays the movie trailer in a browser.
+     </p>
+     
+     <p>
+      To write a new class we use the <em>python keyword class</em> in a python file, that we can call media <em>media</em>, and name it <em>Movie</em> (the first name of the class should be in uppercase, according to google style guide for python, but not necessarily). The style guide is avaiable on the internet: http://google-styleguide.googlecode.com/svn/trunk/pyguide.html
+     </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Creating instances or objects</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        Then we have to create instances. To do that, we open a new file, saving it in the same folder as the previous one. We call it <em>entertainment_center</em>. In this new file, we will <em>import media</em>. It says to python that we want to use the previous file in this one. The class definition should be in a separate file, it is not a necessity, but a good practice; then we call a line of code like - <em>clockwork_orange = media.Movie()</em>. The init function inside the class Movie gets called.
+     </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+   <div class="concept-title">
+    <b>The init function or the constructor</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        We started creating a file called media.py. In this file, we defined a class called Movie. After that, we wrote a code line in other file, called entertainment_center, that says clockwork_orange = media.Movie(). It called the init function inside the class Movie, which constructs space for the creation of a new object. That object we call clockwork_orange.  The function init is also called <em>the constructor</em>, because it constructs space in memory for the new object. 
+     </p> 
+
+     <p>
+        Then we have to define the init function inside the media file, in the class Movie. The function should be defined <em>(__init__)</em>, using two underscores in each side - assigning it is a <em>special function or method</em>. This function takes a few arguments, the first of which is always the keyword <em>(self)</em> - self is the object being created. In the case of clockwork_orange, self directs to it. The function should initialize pieces of information inside our class - to do that it is necessary to call <em>self.title, self.storyline</em>, and so on. init will receive four pieces of information: <em>movie_title, movie_storyline, poster_image, trailer_youtube.</em> The arguments should be attributed to the previous code. Then, in the entertainment_center file, we put the arguments in the code clockwork_orange, and print the function. It should return what is called, like storyline or title. Once it is called, it initializes the function init, which creates space for the object to be constructed. 
+     </p>      
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Creating more instances or objects</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        We will now create another instance or object of the class Movie. The new instance will be called <em>star_wars</em>.  When we create the instance star_wars, with four arguments: <em>movie_title, movie_storyline, poster_image, trailer_youtube</em>, the first argument in the init function, self, calls itself – star_wars.  
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Instance variables</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        We created the class Movie, and defined it with two instances. Constructing instances, we are setting aside space for each instance, and within this space, each instance had its own copy of variables - title, storyline, and so on. Because these variables are unique for each instance, they are called <em>instance variables</em>. 
+      </p>
+
+      <p>
+        If we remove self from storyline in the media file, what we are doing is changing storyline from being a instance variable to a simple local variable inside init function. It can still be called, but not from an instance, like <em>star_wars.storyline</em>. If we call it, the function will throw an error, saying that this instance has no storyline. (AttributeError: Movie instance has no attribute 'storyline')
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Creating the function show_trailer: instance methods</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        We want to be able to write a line like <em>star_wars.show_trailer()</em>, and the trailer plays. A function that is defined inside a class and is associated with an instance is called an <em>instance method</em>.   
+      </p>
+
+      <p>
+        We open the media file and define the function show_trailer. Each instance method take, like init, the first argument as self. All the function has to do is open a web browser with a link, given by the instance (stored in the instance). So it is needed to use self again. It is also necessary to import webbrowser. All that is needed now is to call the function in the other programming file. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Creating the movie website</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Our objective is to create a movie website that shows movie posters and when we click them shows their trailer. To turn the code already made into a website we will need a piece of code called <em>fresh_tomatoes.py</em>. In this file there is a function called <em>def open_movies_page</em>. It takes in a list of movies, and outputs a website that shows those movies. We must download the file and put in the same folder as the rest. Then call <em>fresh_tomatoes.open.movies_page</em>. Then we must put all our movies in a list or an array, so that it can be perceived by the function. <em>Movies = [star_wars, and so on]</em>. Once the list is built, we can give it as input to the function open.movies. The final task is to import fresh tomatoes.   
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>The movie website code example</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Example code for media file:
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">webbrowser</span>
+
+<span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Movie</span>():
+    <span style="color: #DD4422">&quot;&quot;&quot;This class provides a way to store movie related information&quot;&quot;&quot;</span>
+    
+    VALID_RATINGS <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;G&quot;</span>,<span style="background-color: #fff0f0">&quot;PG&quot;</span>,<span style="background-color: #fff0f0">&quot;PG-13&quot;</span>,<span style="background-color: #fff0f0">&quot;R&quot;</span>]
+    
+    <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, movie_title, movie_storyline, poster_image,
+                 trailer_youtube):
+        <span style="color: #007020">self</span><span style="color: #333333">.</span>title <span style="color: #333333">=</span> movie_title
+        <span style="color: #007020">self</span><span style="color: #333333">.</span>storyline <span style="color: #333333">=</span> movie_storyline
+        <span style="color: #007020">self</span><span style="color: #333333">.</span>poster_image_url <span style="color: #333333">=</span> poster_image
+        <span style="color: #007020">self</span><span style="color: #333333">.</span>trailer_youtube_url <span style="color: #333333">=</span> trailer_youtube
+
+    <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">show_trailer</span>(<span style="color: #007020">self</span>):
+        webbrowser<span style="color: #333333">.</span>open(<span style="color: #007020">self</span><span style="color: #333333">.</span>trailer_youtube_url)
+</pre></div>
+  
+      </p>
+
+      <p>
+      Example code for entertainment_center file:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">fresh_tomatoes</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">media</span>
+
+clockwork_orange <span style="color: #333333">=</span> media<span style="color: #333333">.</span>Movie(<span style="background-color: #fff0f0">&quot;Clockwork Orange&quot;</span>, <span style="background-color: #fff0f0">&quot;In future Britain, charismatic delinquent Alex DeLarge is jailed and volunteers for an experimental aversion therapy developed by the government in an effort to solve society&#39;s crime problem - but not all goes according to plan.&quot;</span>,
+                               <span style="background-color: #fff0f0">&quot;http://upload.wikimedia.org/wikipedia/en/4/48/Clockwork_orangeA.jpg&quot;</span>,
+                               <span style="background-color: #fff0f0">&quot;https://www.youtube.com/watch?v=G7fO3bzPeBQ&quot;</span>)
+
+
+star_wars <span style="color: #333333">=</span> media<span style="color: #333333">.</span>Movie(<span style="background-color: #fff0f0">&quot;Star Wars&quot;</span>, <span style="background-color: #fff0f0">&quot;Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the universe from the Empire&#39;s world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.&quot;</span>,
+                        <span style="background-color: #fff0f0">&quot;http://upload.wikimedia.org/wikipedia/pt/8/87/StarWarsMoviePoster1977.jpg&quot;</span>, <span style="background-color: #fff0f0">&quot;https://www.youtube.com/watch?v=9gvqpFbRKtQ&quot;</span>)
+
+
+annie_hall <span style="color: #333333">=</span> media<span style="color: #333333">.</span>Movie(<span style="background-color: #fff0f0">&quot;Annie Hall&quot;</span>, <span style="background-color: #fff0f0">&quot;Neurotic New York comedian Alvy Singer falls in love with the ditsy Annie Hall.&quot;</span>,
+                         <span style="background-color: #fff0f0">&quot;http://upload.wikimedia.org/wikipedia/en/e/e6/Anniehallposter.jpg&quot;</span>, <span style="background-color: #fff0f0">&quot;https://www.youtube.com/watch?v=OqVgCfZX-yE&quot;</span>)
+
+godfather <span style="color: #333333">=</span> media<span style="color: #333333">.</span>Movie(<span style="background-color: #fff0f0">&quot;Godfather&quot;</span>, <span style="background-color: #fff0f0">&quot;The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.&quot;</span>,
+                        <span style="background-color: #fff0f0">&quot;http://upload.wikimedia.org/wikipedia/en/4/4d/Godfather.jpg&quot;</span>, <span style="background-color: #fff0f0">&quot;https://www.youtube.com/watch?v=YBrs0wvkPls&quot;</span>)
+
+blue_velvet <span style="color: #333333">=</span> media<span style="color: #333333">.</span>Movie(<span style="background-color: #fff0f0">&quot;Blue Velvet&quot;</span>, <span style="background-color: #fff0f0">&quot;The discovery of a severed human ear found in a field leads a young man on an investigation related to a beautiful, mysterious nightclub singer and a group of psychopathic criminals who have kidnapped her child.&quot;</span> ,
+                          <span style="background-color: #fff0f0">&quot;http://upload.wikimedia.org/wikipedia/en/d/de/Bvmovieposter.jpg&quot;</span>, <span style="background-color: #fff0f0">&quot;https://www.youtube.com/watch?v=5nz1x_XYU0I&quot;</span>)
+
+lord_of_the_rings <span style="color: #333333">=</span> media<span style="color: #333333">.</span>Movie(<span style="background-color: #fff0f0">&quot;Lord of the Rings&quot;</span>, <span style="background-color: #fff0f0">&quot;A meek hobbit of the Shire and eight companions set out on a journey to Mount Doom to destroy the One Ring and the dark lord Sauron.&quot;</span>,
+                                <span style="background-color: #fff0f0">&quot;http://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg&quot;</span>, <span style="background-color: #fff0f0">&quot;https://www.youtube.com/watch?v=V75dMMIW2B4&quot;</span>)
+
+
+movies <span style="color: #333333">=</span> [clockwork_orange, star_wars, annie_hall, godfather, blue_velvet, lord_of_the_rings]
+
+fresh_tomatoes<span style="color: #333333">.</span>open_movies_page(movies)
+</pre></div>
+
+      </p>
+    </div>
+  </div>
+
+ <div class="concept">
+    <div class="concept-title">
+      <b>New vocabulary words</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        <ul>
+        <li>Class: the class keyword is used to define a class. Classes can be thought like blueprints. Classes can have both data and methods. </li>
+        <li>Instance: Multiple instances can be created in a class, such as star_wars and annie_hall. When we create an instance, the class constructor gets called. </li>
+        <li>Constructor: This is essentialy the init method inside the class. It is here that we initialize all of the data associated with the instance.</li>
+        <li>Self: we can think of self as itself or the instance in question. When the instance star_wars is being created, self is star_wars.</li>
+        <li>Instance variables: All the variables associated with a specific instance are called instance variables. These are unique to an object, and can be accessed using the self keyword inside the class and the instance name outside the class.</li>
+        <li>Instance method: all the functions inside the class that are associated with a specific instance and have self as the first argument are instance methods </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 4: ADVANCED IDEAS ON CLASS ORIENTED PROGRAMMING</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Class variables</b>
+    </div>
+    <div class="concept-description">
+     <p>
+        Sometimes we need variables that all of our instances need to share. Let's say in this case <em>valid_ratings = [''G'',''PG'',''PG-13'',''R'']</em> for a movie. This is a variable that contains a list or an array of all the possible ratings a movie can have. They are the same for all instances. This is called a <em>class variable</em>.
+      </p>
+
+      <p>
+        The class variable should be defined in the class file, in the level of the class, outside the init function. In the other file, we can print the variable.  This means that all the instances of the class Movie can share this variable and its contents. The value of this variable is a constant (it is not going to change), that can be used by all the instances. The style guide for python recommends to use uppercase to define these kind of variables with constant values.  
+      </p>
+
+      <p>
+        In python, all classes come with <em>preexisting class variables</em>. One of them is called <em>__doc__</em>. When it is called, it returns some documentation on the class or instance. To use it with the class Movie, first we need to put some information in the class module. To define documentation it is used triple quotes. With this tool, information can be added in multiple lines. Then we print its documentation <em>print(media.Movie.__doc__)</em>. Other class variables included are <em>__name__ and __module__</em>. 
+      </p>
+
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Inheritance</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        Classes can inherit attributes from other classes. In that way, code can be reused, leading to less work. To show how this works, we will construct two classes: <em>Parent and Child</em>. The class child will inherit some attributes from the class Parent. <em>The inheritance method</em> is used in class Child. The syntax to do that follows: <em>class Child(Parent):</em> By doing so, the class Child will inherit all the attributes that are made public by the class Parent. To do that, the new class will use the old one init method.   
+      </p>
+
+       <p>
+        When the code for child runs, the init method inside child will be called, after that the constructor for class parent will be called and runs. Then the rest of code for class child runs.   
+      </p>
+
+      <p>
+      Code example:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Parent</span>():
+    <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, last_name, eye_color):
+        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Parent Constructor Called&quot;</span>)
+        <span style="color: #007020">self</span><span style="color: #333333">.</span>last_name <span style="color: #333333">=</span> last_name
+        <span style="color: #007020">self</span><span style="color: #333333">.</span>eye_color <span style="color: #333333">=</span> eye_color
+
+
+<span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Child</span>(Parent):
+    <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, last_name, eye_color, number_of_toys):
+        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Child Constructor Called&quot;</span>)
+        Parent<span style="color: #333333">.</span>__init__(<span style="color: #007020">self</span>, last_name, eye_color)
+        <span style="color: #007020">self</span><span style="color: #333333">.</span>number_of_toys <span style="color: #333333">=</span> number_of_toys
+
+billy_cyrus <span style="color: #333333">=</span> Parent(<span style="background-color: #fff0f0">&quot;Cyrus&quot;</span>, <span style="background-color: #fff0f0">&quot;blue&quot;</span>)
+
+<span style="color: #888888">#print(billy_cyrus.last_name)</span>
+
+miley_cyrus <span style="color: #333333">=</span> Child(<span style="background-color: #fff0f0">&quot;Cyrus&quot;</span>, <span style="background-color: #fff0f0">&quot;Blue&quot;</span>, <span style="color: #0000DD; font-weight: bold">5</span>)
+
+<span style="color: #008800; font-weight: bold">print</span>(miley_cyrus<span style="color: #333333">.</span>last_name)
+<span style="color: #008800; font-weight: bold">print</span>(miley_cyrus<span style="color: #333333">.</span>number_of_toys)
+</pre></div>
+
+      </p>
+
+      <p>
+        We can use inheritance to try and improve the class Movie. This class had four attributes – title, storyline, and so on. In addition, it also has the function show_trailer. We created six instances for that class. Imagine now we wanted to create another class TvShow(): This class would have attributes like title, season, episode, tv_station and a function get_local_listing(). In this class, we could have instances like the final episode of Seinfeld or the first of Lost. There are several items that both classes could share - title, duration in minutes, and so on. The best way to do that is to create another class Video(): with two attributes - title and duration in minutes, that can be inherited by the other two classes.  
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>Method inheritance and overriding</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Inheritance can also be used to <em>inherit methods</em>. To do that, we will create a method in the class Parent from the previous example, show_information - to show information about the instance. Because class Child inherits from class Parent, this new method will be inherited, even though this method is not explicitly defined in class Child. We can create another show_info() method in the Class child, to go over all other attributes; This new method will override the previous one, and be used also by the class Parent. This is the ability of a subclass, like Child, to override a method inherited from other class. It is called in programming <em>Method Overriding</em>.   
+      </p> 
+    </div>  
+  </div> 
+
+   <div class="concept">
+    <div class="concept-title">
+      <b>Object oriented and other programming tools: some connections</b>
+    </div>
+    <div class="concept-description">
+      <p>
+      In the first project of this programming course we developed a simple website. We learned that webpages have branched structures formed in HTML coding. These structures may result in different looking webpages, depending on the style imprinted by CSS. To imprint this style in our page, we gave for each element a class attribute.   
+      </p>
+
+      <p>
+      To do that task, at that time, we learned to use a kind of object-oriented programming, although we didn't know that. We created classes in CSS, like concept and concept_title, and used them to imprint styles in many different HTML elements. This made our programming task easier and faster, since we only wrote certain pieces of code once and could reuse them many times.    
+      </p>
+
+      <p>
+      The use of OOB in CSS to imprint styles in HTML is a model of programming developed by Nicole Sullivan, mainly based on two principles:<em>separate structure and skin; separate container and content</em>.  That is how we learned to build our webpage. We developed an HTML structure and a CSS based skin, separating certain containers (classes like concept or concept_title) from each content. This made easier for us to integrate new HTML elements, without having to style them individually.     
+      </p>
+
+      <p>
+      New concepts learned in this present lesson can also enlight others learned in the past. One concept that can be used in CSS is inheritance, by which properties are applied to a specific element and its descendents, just as we learned in OOB. We saw that in CSS we can also use method override, since cascading means that the most specific rule is applied to every element. The use of all these tools becomes much clearer with the study of OOB.       
+      </p>
+    </div>
+  </div>   
+</div>
+
+</body>
+
+</html>
